@@ -200,6 +200,7 @@ body {
     color: var(--color-white);
     font-size: 64px;
     font-weight: bold;
+    margin-bottom: 26px;
 }
 
 .article-title-badge {
@@ -212,6 +213,18 @@ body {
     line-height: 28px;
     border-radius: 8px;
     letter-spacing: 0.18em;
+}
+
+/* 인접 형제 콤비네이터(+)를 사용하지 않은 이유 고민 필요 */
+.article-description p {
+    /* 한줄 높이 만큼 margin-bottom 설정 */
+    line-height: 1.6;
+    margin-bottom: 1.6em;
+}
+
+.article-description p:last-child {
+    /* p요소의 마지막은 항상 margin-bottom: 0 */
+    margin-bottom: 0;
 }
 
 .article-sidebar {
