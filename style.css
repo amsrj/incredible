@@ -3,6 +3,11 @@ body {
     margin: unset;
 }
 
+img {
+    /* img 하단의 아랫쪽 공간 없애기 위함 */
+    vertical-align: top;
+}
+
 /* CSS Variables */
 :root {
     /* Color */
@@ -51,6 +56,13 @@ body {
 
     /* min-height 컨트롤하는 것 말고, overflow속성을 이용함으로서도 자식요소가 부모요소의 높이에 영향을 끼치는 것을 막을수 있다. */
     overflow: hidden;
+}
+
+.article-cover-src {
+    /* 그 어떤 이미지가 들어가더라도, 안정적으로 16 / 9 비율로 강제되도록 하기 위함 */
+    /* 물론 강제한 비율이, 원본 이미지의 비율과 다르므로 찌그러진당 */
+    width: 100%;
+    height: 100%;
 }
 
 .article-main {
