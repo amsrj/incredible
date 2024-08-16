@@ -73,7 +73,16 @@ body {
         object-fit: contain => background-size: contain 마냥 동작 
     */
     /* 컨테이너 기준으로 해당 이미지를 무조건 포함하게끔 연출, 비율은 유지! 사이즈는 조정 */
-    object-fit: contain;
+    object-fit: contain;    
+}
+
+/* .article-cover의 그라디언트를 깔아 주기 위한 가상 요소: 1단계 */
+.article-cover::after {
+    content: "wow";
+    background-color: red;
+    position: absolute;
+    left: 0;
+    top: 0;
 }
 
 .article-main {
