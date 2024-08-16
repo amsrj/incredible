@@ -1,0 +1,16 @@
+/* Reset */
+body {
+    margin: unset;
+}
+
+/* Component */
+.wrapper {
+    box-shadow: inset 0 0 20px red;
+    margin: 60px auto;
+
+    /* 컨테이닝 블록 기준으로 가득 차려고 시도 */
+    width: auto;
+
+    /* 가득 차는 상황에서 최대치로 커질 수 있는 너비를 제한 */
+    max-width: 1200px;
+}
