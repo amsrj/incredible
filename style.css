@@ -30,6 +30,9 @@ img {
 :root {
     /* Color */
     /* CSS Variable을 활용하여 색상 정보 체계적 관리 */
+
+    --color-red: #FF2E00;
+
     --color-white: #fff;
     --color-gray-50: #999;
     --color-gray-80: #222;
@@ -191,6 +194,24 @@ body {
     내부 콘텐츠 너비에 의해 해당 요소 (부모)의 너비가 결정되지 않게 만들기 위해 0으로 재설정 
     */
     min-width: 0;
+}
+
+.article-title {
+    color: var(--color-white);
+    font-size: 64px;
+    font-weight: bold;
+}
+
+.article-title-badge {
+    background-color: var(--color-red);
+    display: block;
+    width: fit-content;
+    font-size: 12px;
+    padding: 0 12px;
+    height: 28px;
+    line-height: 28px;
+    border-radius: 8px;
+    letter-spacing: 0.18em;
 }
 
 .article-sidebar {
