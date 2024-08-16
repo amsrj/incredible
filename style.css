@@ -52,6 +52,12 @@ img {
 :root {
     /* 시스템 폰트인 arial 셋팅 */
     font-family: var(--font-en);
+
+    /* 한글의 어절이 유지되게 함 */
+    word-break: keep-all;
+
+    /* 한글의 한 어절이 너무나 커서, 컨테이너를 넘어가면, break-word한당 */
+    overflow-wrap: break-word;
 }
 
 /* Component */
