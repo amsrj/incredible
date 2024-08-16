@@ -36,3 +36,14 @@ body {
     background-color: var(--color-gray-90);
     color: var(--color-gray-50);
 }
+
+.article-cover {
+    box-shadow: inset 0 0 20px red;
+
+    /* 비율을 유지하는 블록 레벨 요소를 만든당 */
+    aspect-ratio: 16 / 9;
+}
+
+.article-main {
+    box-shadow: inset 0 0 20px blue;
+}
