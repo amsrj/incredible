@@ -128,8 +128,9 @@ body {
     /* flex container가 되게 함 */
     display: flex;
 
-    /* row-gap, column-gap을 한꺼번에 100px로 */
-    gap: 100px;
+    /* gap: 100p;x => row-gap, column-gap을 한꺼번에 100px로 */
+    column-gap: 100px;
+    row-gap: 48px;
 
     flex-wrap: wrap; /* 초기값은 nowrap */
 }
