@@ -130,6 +130,8 @@ body {
 
     /* row-gap, column-gap을 한꺼번에 100px로 */
     gap: 100px;
+
+    flex-wrap: wrap; /* 초기값은 nowrap */
 }
 
 .article-contents {
@@ -138,8 +140,10 @@ body {
     /* 가용 공간 몽땅! 자신의 너비로 가져감 */
     flex-grow: 1;  /* 초기값 0 */
 
-    /* 내부 텍스트 너비는 버림 -> grow로만 너비 책정 가능허게 함! */
-    flex-basis: 0; /* 초기값 auto -> 내부 콘텐츠 너비 만큼 */
+    /* flex-basis: 0 => 내부 텍스트 너비는 버림 -> grow로만 너비 책정 가능허게 함! */
+
+    /* flex-basis: 300px 해당 값 기준으로 flex-wrap이 동작되게! */
+    flex-basis: 300px;
 
     /*
     min-width: auto; -> 0;
