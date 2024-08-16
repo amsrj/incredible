@@ -6,6 +6,7 @@ body {
 img {
     /* img 하단의 아랫쪽 공간 없애기 위함 */
     vertical-align: top;
+
 }
 
 /* CSS Variables */
