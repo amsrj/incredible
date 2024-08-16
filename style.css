@@ -42,6 +42,9 @@ body {
 
     /* 비율을 유지하는 블록 레벨 요소를 만든당 */
     aspect-ratio: 16 / 9;
+
+    /* min-height가 내부 콘텐츠 높이만큼 강제 (auto가 그렇게 계산된당) */
+    min-height: 0; /* auto가 아닌 값으로 만들어줘서 내부 콘텐츠 높이와 관계없이 aspect-ratio가 유지되게 함 */
 }
 
 .article-main {
