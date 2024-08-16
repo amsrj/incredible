@@ -39,6 +39,16 @@ img {
     --color-gray-90-rgb: 17 17 17; /* #111 */
 
     --color-black: #000;
+
+    /* Fonts */
+    --font-en: 'arial';
+    --font-ko: 'arial';
+}
+
+/* Typography */
+:root {
+    /* 시스템 폰트인 arial 셋팅 */
+    font-family: var(--font-en);
 }
 
 /* Component */
