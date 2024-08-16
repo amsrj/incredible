@@ -7,6 +7,9 @@ img {
     /* img 하단의 아랫쪽 공간 없애기 위함 */
     vertical-align: top;
 
+    /* img가 최대로 커질 수 있는 너비를 제한한당.
+    어떻게? 컨테이닝 블록의 너비로~ 말이얌 */
+    max-width: 100%;
 }
 
 /* CSS Variables */
