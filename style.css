@@ -19,8 +19,11 @@ img {
     --color-white: #fff;
     --color-gray-50: #999;
     --color-gray-80: #222;
-    /* CSS Variable과 연동을 위해 문법을 변경 */
-    --color-gray-90: 17 17 17; /* #111 */
+    --color-gray-90: rgb( var(--color-gray-90-rgb) / 1 ); 
+
+    /* rgb 별도 작성 */
+    --color-gray-90-rgb: 17 17 17; /* #111 */
+
     --color-black: #000;
 }
 
@@ -102,7 +105,7 @@ body {
     height: 40%;
 
     /* 실제 그라디언트 코드 */
-    background-image: linear-gradient( to bottom, rgb( var(--color-gray-90) / 0 ) 0%, rgb( var(--color-gray-90) / 1 ) 100% );
+    background-image: linear-gradient( to bottom, rgb( var(--color-gray-90-rgb) / 0 ) 0%, rgb( var(--color-gray-90-rgb) / 1 ) 100% );
 
     /*
     예전 rgba() 문법의 소개와 CSS Variables와 최고의 궁합인 rgb() 문법을 소개 
