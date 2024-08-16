@@ -67,6 +67,9 @@ body {
 
     /* 하위 ::after요소의 컨테이닝 블록이 될 수 있게! position: static이 아닌 값으로 설정함! */
     position: relative;
+
+    /* article-cover를 좀 더 빨리 끝나게 만들어, 뒤따라오는 article-main이 cover를 덮을수 있도록 네거티브 마진 적용 */
+    margin-bottom: -40px;
 }
 
 .article-cover-src {
