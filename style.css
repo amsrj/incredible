@@ -115,8 +115,17 @@ body {
     */
 }
 
-
-
 .article-main {
     box-shadow: inset 0 0 20px blue;
+
+    /* 피그마상의 padding을 우선 적용 */
+    padding: 0 100px 60px 60px;
+}
+
+.article-contents {
+    box-shadow: inset 0 0 20px gold;
+}
+
+.article-sidebar {
+    box-shadow: inset 0 0 20px red;
 }
