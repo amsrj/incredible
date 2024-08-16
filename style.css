@@ -120,12 +120,35 @@ body {
 
     /* 피그마상의 padding을 우선 적용 */
     padding: 0 100px 60px 60px;
+
+    /* flex container가 되게 함 */
+    display: flex;
+
+    /* row-gap, column-gap을 한꺼번에 100px로 */
+    gap: 100px;
 }
 
 .article-contents {
     box-shadow: inset 0 0 20px gold;
+
+    /* 가용 공간 몽땅! 자신의 너비로 가져감 */
+    flex-grow: 1;  /* 초기값 0 */
+
+    /* 내부 텍스트 너비는 버림 -> grow로만 너비 책정 가능허게 함! */
+    flex-basis: 0; /* 초기값 auto -> 내부 콘텐츠 너비 만큼 */
 }
 
 .article-sidebar {
     box-shadow: inset 0 0 20px red;
+    width: 240px;
+    /* 
+        flex-basis: auto;
+        min-width: auto;
+        auto값을 width값과 동기화
+
+        min-width: auto는 width값이 flex-shrink: 1에 의해 수축 될 때 같이 동기화 되어 조절됨.
+
+        width: 240px에서 수축되어 220px로 되었다고 한다면,
+        그당시 min-width: auto는 220px로 재계산 됨.
+    */ 
 }
