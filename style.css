@@ -48,6 +48,12 @@ body {
 .article {
     background-color: var(--color-gray-90);
     color: var(--color-gray-50);
+
+    /* article을, 새로운 스태킹 컨텍스트로 만든당 */
+    z-index: 0;
+
+    /* z-index는 단독으로 동작되지 아니한다! position: static이 아닌 값이 들어가야 함. (flexitems는 z-index 단독 동작 가능 */
+    position: relative;
 }
 
 .article-cover {
@@ -67,6 +73,9 @@ body {
 
     /* 하위 ::after요소의 컨테이닝 블록이 될 수 있게! position: static이 아닌 값으로 설정함! */
     position: relative;
+
+    /* 스태킹 컨텍스트인 상위 요소 .article 기준으로 -1 */
+    z-index: -1;
 
     /* article-cover를 좀 더 빨리 끝나게 만들어, 뒤따라오는 article-main이 cover를 덮을수 있도록 네거티브 마진 적용 */
     margin-bottom: -40px;
