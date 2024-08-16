@@ -78,7 +78,8 @@ body {
     z-index: -1;
 
     /* article-cover를 좀 더 빨리 끝나게 만들어, 뒤따라오는 article-main이 cover를 덮을수 있도록 네거티브 마진 적용 */
-    margin-bottom: -40px;
+    /* 차후에 이 article-cover 마크업이 없어지더라도 아랫쪽 article-main은 정상적으로 콘텐츠 전달이 될 수 있도록 */
+    margin-bottom: -6%; /* margin-bottom을 컨테이닝 블록 너비 기준으로 설정하여 안정성을 높임 */
 }
 
 .article-cover-src {
