@@ -169,7 +169,6 @@ body {
 }
 
 .article-main {
-    box-shadow: inset 0 0 20px blue;
 
     /* 피그마상의 padding을 우선 적용 */
     padding: 0 100px 60px 60px;
@@ -185,7 +184,6 @@ body {
 }
 
 .article-contents {
-    box-shadow: inset 0 0 20px gold;
 
     /* 가용 공간 몽땅! 자신의 너비로 가져감 */
     flex-grow: 1;  /* 초기값 0 */
@@ -234,7 +232,6 @@ body {
 }
 
 .article-sidebar {
-    box-shadow: inset 0 0 20px red;
     width: 240px;
     /* 
         flex-basis: auto;
@@ -247,3 +244,27 @@ body {
         그당시 min-width: auto는 220px로 재계산 됨.
     */ 
 }
+
+.ratings {
+    background-image: url(images/happy.png);
+    background-size: 240px 96px;
+    width: 240px;
+    height: 48px;
+    overflow: hidden;
+}
+
+.ratings::before {
+    content: ' ';
+    display: block;
+    width: 0;
+    height: 48px;
+    background-image: url(images/happy.png);
+    background-size: 240px 96px;
+    background-position: left bottom;
+}
+
+.ratings.score_1::before { width: 20%; }
+.ratings.score_2::before { width: 40%; }
+.ratings.score_3::before { width: 60%; }
+.ratings.score_4::before { width: 80%; }
+.ratings.score_5::before { width: 100%; }
