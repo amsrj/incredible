@@ -22,6 +22,9 @@ body {
 .wrapper {
     margin: 60px auto;
 
+    /* .wrapper에 좌우 패딩을 기본적으로 제공 / 뷰포트 사이즈가 작아져도 좌우로 기본적인 여유를 부여함 */
+    padding: 0 30px;
+
     /* 컨테이닝 블록 기준으로 가득 차려고 시도 */
     width: auto;
 
