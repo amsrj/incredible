@@ -44,7 +44,13 @@ body {
     aspect-ratio: 16 / 9;
 
     /* min-height가 내부 콘텐츠 높이만큼 강제 (auto가 그렇게 계산된당) */
-    min-height: 0; /* auto가 아닌 값으로 만들어줘서 내부 콘텐츠 높이와 관계없이 aspect-ratio가 유지되게 함 */
+    /*
+        min-height: 0; 
+        auto가 아닌 값으로 만들어줘서 내부 콘텐츠 높이와 관계없이 aspect-ratio가 유지되게 함 
+    */
+
+    /* min-height 컨트롤하는 것 말고, overflow속성을 이용함으로서도 자식요소가 부모요소의 높이에 영향을 끼치는 것을 막을수 있다. */
+    overflow: hidden;
 }
 
 .article-main {
