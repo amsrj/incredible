@@ -244,27 +244,3 @@ body {
         그당시 min-width: auto는 220px로 재계산 됨.
     */ 
 }
-
-.ratings {
-    background-image: url(images/happy.png);
-    background-size: 240px 96px;
-    width: 240px;
-    height: 48px;
-    overflow: hidden;
-}
-
-.ratings::before {
-    content: ' ';
-    display: block;
-    width: 0;
-    height: 48px;
-    background-image: url(images/happy.png);
-    background-size: 240px 96px;
-    background-position: left bottom;
-}
-
-.ratings.score_1::before { width: 20%; }
-.ratings.score_2::before { width: 40%; }
-.ratings.score_3::before { width: 60%; }
-.ratings.score_4::before { width: 80%; }
-.ratings.score_5::before { width: 100%; }
