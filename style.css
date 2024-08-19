@@ -45,7 +45,7 @@ img {
 
     /* Fonts */
     --font-en: 'arial';
-    --font-ko: 'arial';
+    --font-ko: 'Noto Sans KR';
 }
 
 /* Typography */
@@ -198,6 +198,10 @@ body {
     내부 콘텐츠 너비에 의해 해당 요소 (부모)의 너비가 결정되지 않게 만들기 위해 0으로 재설정 
     */
     min-width: 0;
+}
+
+.article-contents p {
+    font-family: var(--font-ko);
 }
 
 .article-title {
