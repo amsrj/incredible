@@ -123,6 +123,8 @@ body {
     /* article-cover를 좀 더 빨리 끝나게 만들어, 뒤따라오는 article-main이 cover를 덮을수 있도록 네거티브 마진 적용 */
     /* 차후에 이 article-cover 마크업이 없어지더라도 아랫쪽 article-main은 정상적으로 콘텐츠 전달이 될 수 있도록 */
     margin-bottom: -6%; /* margin-bottom을 컨테이닝 블록 너비 기준으로 설정하여 안정성을 높임 */
+
+
 }
 
 .article-cover-src {
@@ -139,8 +141,12 @@ body {
     /* 
         object-fit: contain => background-size: contain 마냥 동작 
     */
-    /* 컨테이너 기준으로 해당 이미지를 무조건 포함하게끔 연출, 비율은 유지! 사이즈는 조정 */
-    object-fit: contain;    
+    /* 컨테이너 기준으로 해당 이미지 또는 비디오를 무조건 포함하게끔 연출, 비율은 유지! 사이즈는 조정 => contain */
+
+    /* 이미지 또는 비디오의 사이즈를 컨테이너 기준으로 조절하되,
+    가장 잘 보여질 수 있는 모습으로 연출 (좌우 또는 위아래로 잘릴 수 있음) */
+    object-fit: cover;    
+
 }
 
 /* .article-cover의 그라디언트를 깔아 주기 위한 가상 요소: 1단계 */
