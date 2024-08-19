@@ -60,6 +60,14 @@ img {
     overflow-wrap: break-word;
 
     line-height: 1.6;
+
+    /* 전체 font-size 설정의 기준값이 된당 */
+    font-size: 62.5%; /* 16px의 62.5% => 10px */
+}
+
+body {
+    /* :root 기준 폰트사이즈에서 1.6배 */
+    font-size: 1.6rem;
 }
 
 /* Component */
@@ -208,7 +216,7 @@ body {
 
 .article-title {
     color: var(--color-white);
-    font-size: 64px;
+    font-size: 6.4rem;
     font-weight: bold;
     margin-bottom: 26px;
     line-height: 1;
