@@ -278,8 +278,27 @@ body {
 
 .ratings {
     box-shadow: inset 0 0 20px gold;
-    background-image: url(images/happy.png);
-    background-size: 240px 96px;
     width: 240px;
     height: 48px;
+    background-image: url(images/happy.png);
+    background-size: 240px 96px;
+    overflow: hidden;
 }
+
+/* 내부에 꽉 차있는 별점 이미지를 위해서 작업 */
+.ratings::before {
+    content: ' ';
+    display: block;
+    width: 0;
+    background-position: left bottom;
+    height: inherit;
+    background-image: inherit;
+    background-size: inherit;
+}
+
+/* 데이터에 따른 결과물 미리 셋팅 */
+.ratings.score_1::before { width: 20%; }
+.ratings.score_2::before { width: 40%; }
+.ratings.score_3::before { width: 60%; }
+.ratings.score_4::before { width: 80%; }
+.ratings.score_5::before { width: 100%; }
