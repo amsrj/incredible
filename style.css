@@ -58,6 +58,8 @@ img {
 
     /* 한글의 한 어절이 너무나 커서, 컨테이너를 넘어가면, break-word한당 */
     overflow-wrap: break-word;
+
+    line-height: 1.6;
 }
 
 /* Component */
@@ -209,6 +211,7 @@ body {
     font-size: 64px;
     font-weight: bold;
     margin-bottom: 26px;
+    line-height: 1;
 }
 
 .article-title-badge {
@@ -221,6 +224,7 @@ body {
     line-height: 28px;
     border-radius: 8px;
     letter-spacing: 0.18em;
+    margin-bottom: 5px;
 }
 
 /* 인접 형제 콤비네이터(+)를 사용하지 않은 이유 고민 필요 */
