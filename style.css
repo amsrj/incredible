@@ -294,11 +294,21 @@ body {
     height: inherit;
     background-image: inherit;
     background-size: inherit;
+    transition: width .4s;
 }
 
 /* 데이터에 따른 결과물 미리 셋팅 */
+/* 클래스 방식 */
 .ratings.score_1::before { width: 20%; }
 .ratings.score_2::before { width: 40%; }
 .ratings.score_3::before { width: 60%; }
 .ratings.score_4::before { width: 80%; }
 .ratings.score_5::before { width: 100%; }
+
+/* data-* 방식 */
+.ratings[data-score="0"]::before { width: 0%; }
+.ratings[data-score="1"]::before { width: 20%; }
+.ratings[data-score="2"]::before { width: 40%; }
+.ratings[data-score="3"]::before { width: 60%; }
+.ratings[data-score="4"]::before { width: 80%; }
+.ratings[data-score="5"]::before { width: 100%; }
