@@ -3,7 +3,7 @@ body {
     margin: unset;
 }
 
-h1 {
+h1, h2 {
     margin: unset;
     font-size: unset;
     font-weight: unset;
